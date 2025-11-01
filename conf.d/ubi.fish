@@ -19,3 +19,5 @@ function __ubi_download_on_install --on-event ubi_install --description 'Install
 
     return 0
 end
+
+abbr -a -- ubi ubi -i (test -n "$XDG_BIN_HOME"; and echo "$XDG_BIN_HOME"; or echo "$HOME/.local/bin")
