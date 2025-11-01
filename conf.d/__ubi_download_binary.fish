@@ -1,4 +1,4 @@
-function __ubi_download_on_install --on-event ubi_fish_install --description 'Install ubi when plugin is added'
+function __ubi_download_on_install --on-event ubi_install --description 'Install ubi when plugin is added'
     set -l target_dir (test -n "$XDG_BIN_HOME"; and echo "$XDG_BIN_HOME"; or echo "$HOME/.local/bin")
     set -l target_path $target_dir/ubi
 
